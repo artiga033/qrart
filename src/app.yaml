@@ -1,0 +1,23 @@
+name: qr-art
+version: "0.1.0"
+author: artiga033 <artiga033@hotmail.com>
+about: Generate image-backgrounded QR Code.
+args:
+  - image:
+      short: i
+      long: image
+      value_name: image_file_path
+      about: Path to the image to be used as background
+      required: true
+      takes_value: true
+  - text:
+      value_name: text
+      about: The text to be encoded into the QR Code
+      required: true
+      takes_value: true
+  - output:
+      short: o
+      value_name: output_path
+      about: Path where output is expected
+      required: true
+      takes_value: true
